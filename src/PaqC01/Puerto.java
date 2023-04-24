@@ -3,6 +3,7 @@ package PaqC01;
 import java.io.Serializable;
 
 public class Puerto implements Serializable {
+    //se guardá?
     private Hub[] puerto;
 
     public Puerto() {
