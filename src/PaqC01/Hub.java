@@ -1,3 +1,4 @@
+//Javier Yago Giménez
 package PaqC01;
 
 import java.io.Serializable;
@@ -107,4 +108,17 @@ public class Hub implements Serializable {
         }
         return cantidad;
     }
+    public String comprobar (int peso){
+        boolean chequeado=false;
+        for(int i=0; i<10; i++){
+            for (int j=0; j<12; j++){
+                if(contenedores[i][j].getPesoCont()>=peso){
+                    chequeado=true;
+                    return "Id contenedor:" + contenedores[i][j].getNumeroIdentf() + "\n" + "Peso (toneladas):" + contenedores[i][j].getPesoCont() + "\n" + "Empresa remitente:" + contenedores[i][j].getNombreEmpresaEnvia() + "\n" + "Chequeado en aduana:" + chequeado + "\n" ;
+                }
+            }
+        }
+        return null;
+    }
+
 }

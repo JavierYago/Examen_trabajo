@@ -1,3 +1,4 @@
+//Javier Yago Giménez
 package PaqC01;
 
 import java.io.Serializable;
@@ -42,4 +43,9 @@ public class Puerto implements Serializable {
 
         return total;
     }
+    public String toStringPuerto(int pesoCont, int nHub){
+      return puerto[nHub].comprobar(pesoCont);
+        }
+
+
 }
